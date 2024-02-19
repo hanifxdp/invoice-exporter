@@ -1,0 +1,214 @@
+{
+    "Cookies": [
+        {
+            "variant" : "Classic Orginal",
+            "price" : 6500,
+            "image" : "https://down-id.img.susercontent.com/file/sg-11134201-22100-6jckybwx55iva4"
+        },
+        {
+            "variant" : "Double Chocolate",
+            "price" : 8500, 
+            "image": "https://down-id.img.susercontent.com/file/33618aa2fef7a2e2328ecf6a6d08f69f"
+        },
+        {
+            "variant" : "Choco Bomb",
+            "price" : 8500,
+            "image": "https://down-id.img.susercontent.com/file/f16fa8c7b57104b8a92788ed2536b7e9"
+        },
+        {
+            "variant" : "Smore's",
+            "price" : 10000,
+            "image":"https://down-id.img.susercontent.com/file/id-11134207-7r992-louo7tzauiuo18"
+        },
+        {
+            "variant" : "Red Velvet Cheese",
+            "price" : 10000,
+            "image":"https://down-id.img.susercontent.com/file/d522e4dc22b0b04ffc26f7ecfa8c9068"
+        },
+        {
+            "variant" : "Cornflakes Marshmallow",
+            "price" : 9000,
+            "image":"https://down-id.img.susercontent.com/file/sg-11134201-22100-daqeu93x55ive9"
+        },
+        {
+            "variant" : "Cloreo",
+            "price" : 10000,
+            "image":"https://down-id.img.susercontent.com/file/id-11134207-7r98t-louo7tzat4a8a8"
+        },
+        {
+            "variant" : "Clotus",
+            "price" : 8500,
+            "image":"https://down-id.img.susercontent.com/file/id-11134207-7r98v-louo7tzb1jow16"
+        },
+        {
+            "variant" : "Matcha Green Tea",
+            "price" : 8500,
+            "image":"https://down-id.img.susercontent.com/file/4f5504e655ff287d46c633afd0b3f41a"
+        },
+        {
+            "variant" : "Fruity Pebbles",
+            "price" : 9000,
+            "image":"https://down-id.img.susercontent.com/file/c57e1e36f0b239effc15e4b14febc7ff"
+        },
+        {
+            "variant" : "Signature NY Chochip",
+            "price" : 15000,
+            "image":"https://down-id.img.susercontent.com/file/c533c300b26b64e60d9bd759eddadc2f"
+        },
+        {
+            "variant" : "Signature Nutella",
+            "price" : 18000,
+            "image":"https://down-id.img.susercontent.com/file/80fea95f32a67d89a6bec69398bcd9e0"
+        },
+        {
+            "variant" : "Signature Red Velvet",
+            "price" : 18000,
+            "image":"https://down-id.img.susercontent.com/file/sg-11134201-23020-uvnuvm5poenv54"
+        },
+        {
+            "variant": "Signature Brookies",
+            "price": 17000,
+            "image": "https://down-id.img.susercontent.com/file/id-11134207-7r98r-loxbsui2fxcx20"
+        }
+    ],
+    "Brownies":[
+        {
+        "variant" : "Lotus Biscoff [20X10 cm]",
+        "price" : [
+            33000
+            ]
+        },
+        {
+            "variant" : "Lotus Biscoff [20X40 cm]",
+            "price" : [
+                65000
+                ]
+            },
+        {
+        "variant" : "Original [20X10 cm]",
+        "price" : [
+            28000
+            ]
+        },
+        {
+            "variant" : "Original [20X20 cm]",
+            "price" : [
+                55000
+                ]
+            },
+        {
+        "variant" : "Oreo Cookies & Cream [20X10 cm]",
+        "price" : [
+            30000
+            ]
+        },
+        {
+            "variant" : "Oreo Cookies & Cream [20X20 cm]",
+            "price" : [
+                60000
+                ]
+            },
+        {
+        "variant" : "Special Edition [20X10 cm]",
+        "price" : [
+            65000
+            ]
+        },
+        {
+            "variant" : "Special Edition [20X20 cm]",
+            "price" : [
+                130000
+                ]
+            },
+        {
+        "variant" : "Red Velvet Cheese [20X10 cm] [Limited]",
+        "price" : [
+            42500
+            ]
+        },
+        {
+            "variant" : "Red Velvet Cheese [20X20 cm] [Limited]",
+            "price" : [
+                84000
+                ]
+            },
+        {
+        "variant" : "Smore's [20X10 cm]",
+        "price" : [
+            33000
+            ]
+        },
+        {
+            "variant" : "Smore's [20X20 cm]",
+            "price" : [
+                65000
+                ]
+            }
+    ],
+    "Others":[
+        {
+            "variant": "Poured Tiramisu",
+            "price": 33250
+        },
+        {
+            "variant": "Croffle",
+            "price": 55000
+        },
+        {
+            "variant": "Extra Bubblewrap",
+            "price": 2000
+        },
+        {
+            "variant": "Kartu Ucapan (Custom Handwriting)",
+            "price": 2000
+        },
+        {
+            "variant": "Korean Garlic Bread",
+            "price": 25000
+        }
+    ],
+    "Cake": [
+        {
+        "variant": "Blue Cheese Yougurt",
+        "price":  255000
+        },
+        {
+        "variant": "Lotus Biscoff",
+        "price":  240000
+        },
+        {
+        "variant": "Strawberry Stacked Chocolate",
+        "price":  225000
+        },
+        {
+        "variant": "Basque Burnt Cheesecake",
+        "price":  255000
+        },
+        {
+        "variant": "Earl Grey Mandarine",
+        "price":  220000
+        },
+        {
+        "variant": "Strawberry Chocolate",
+        "price":  255000
+        }
+    ],
+    "Slice":[
+        {
+            "variant": "Creme Brulee",
+            "price": 33000
+        },
+        {
+            "variant": "Strawberry",
+            "price": 33000
+        },
+        {
+            "variant": "Lotus Biscoff",
+            "price": 33000
+        },
+        {
+            "variant": "Belgian Chocolate",
+            "price": 33000
+        }
+    ]
+}
