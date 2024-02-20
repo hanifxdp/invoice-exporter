@@ -1,15 +1,29 @@
 import React from "react";
+import {
+	Route,
+	RouterProvider,
+	createBrowserRouter,
+	createRoutesFromElements,
+} from "react-router-dom";
 import { Home } from "./pages/home";
+import { Saved } from "./pages/saved";
 import { NavBar } from "./components/NavBar";
-import { Box } from "@chakra-ui/react";
+import { About } from "./pages/about";
+
+const router = createBrowserRouter(
+	createRoutesFromElements(
+		<Route path="/" element={<NavBar />}>
+			<Route index element={<Home />} />
+			<Route path="saved" element={<Saved />} />
+			<Route path="about" element={<About />} />
+		</Route>
+	)
+);
 
 function App() {
 	return (
 		<>
-			<Box px="10" py="6" w="full">
-				<NavBar />
-				<Home />
-			</Box>
+			<RouterProvider router={router} />
 		</>
 	);
 }

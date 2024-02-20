@@ -71,6 +71,7 @@ export const Home = () => {
 				<form onSubmit={handleSubmit(onSubmitForm)} noValidate>
 					<Flex width="full" flexDir="column" gap="12px">
 						<InputForm
+							id="customerName"
 							name="customerName"
 							type="text"
 							label="Customer Name"
@@ -79,6 +80,7 @@ export const Home = () => {
 							error={errors?.customerName?.message}
 						/>
 						<InputForm
+							id="noHP"
 							name="noHp"
 							type="number"
 							label="Customer Phone Number"
@@ -88,6 +90,7 @@ export const Home = () => {
 						/>
 
 						<InputForm
+							id="email"
 							name="email"
 							type="email"
 							label="Email"
@@ -96,6 +99,7 @@ export const Home = () => {
 							error={errors?.email?.message}
 						/>
 						<InputForm
+							id="date"
 							name="date"
 							type="date"
 							label="Order Date"
@@ -164,13 +168,14 @@ export const Home = () => {
 								</GridItem>
 								<GridItem colSpan={2} as={Flex} gap={2}>
 									<InputForm
+										id={`products.${idx}.quantity`}
 										width="100px"
 										name="quantity"
 										type="number"
 										placeholder="Qty..."
 										required={true}
 										error={errors.product?.[idx]?.quantity?.message}
-										onChange={setValue(`product.${idx}.quantity`)}
+										onChange={(e) => setValue(`product.${idx}.quantity`, e.target.value)}
 									/>
 									<Button
 										variant={"outline"}
@@ -192,6 +197,7 @@ export const Home = () => {
 							Add the product
 						</Button>
 						<SelectInput
+							id="shipping"
 							label="Shipping"
 							placeholder="Select the shipping method..."
 							name="shipping"
@@ -203,6 +209,7 @@ export const Home = () => {
 							required={true}
 						/>
 						<SelectInput
+							id="payment"
 							label="Payment"
 							placeholder="Select the payment method..."
 							name="payment"
@@ -214,6 +221,7 @@ export const Home = () => {
 							required={true}
 						/>
 						<SelectInput
+							id="status"
 							label="Status"
 							placeholder="Select the payment status..."
 							name="status"

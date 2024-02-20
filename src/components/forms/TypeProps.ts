@@ -1,4 +1,5 @@
 export type TypeProps = {
+	id: string;
 	label?: string;
 	placeholder: string;
 	name: string;
@@ -12,5 +13,5 @@ export type TypeProps = {
 		label: string;
 	}[];
 	width?: string;
-	onChange?: any;
+	onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
