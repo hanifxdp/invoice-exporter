@@ -15,6 +15,7 @@ const SelectInput = ({
 	required,
 	error,
 	value,
+	isRequired,
 }: TypeProps) => {
 	const { register } = useFormContext();
 	return (
@@ -29,6 +30,7 @@ const SelectInput = ({
 						message: `${name} is required`,
 					},
 				})}
+				isRequired={isRequired}
 			>
 				{option?.map((item) => (
 					<option key={item.value} value={item.value}>

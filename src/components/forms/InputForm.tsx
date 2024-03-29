@@ -17,7 +17,8 @@ const InputForm = ({
 	required,
 	error,
 	value,
-	onChange
+	onChange,
+	isRequired,
 }: TypeProps) => {
 	const { register } = useFormContext();
 	return (
@@ -29,7 +30,8 @@ const InputForm = ({
 				value={value}
 				placeholder={placeholder}
 				disabled={disabled}
-				{...register(id, { required, onChange})}
+				{...register(id, { required, onChange })}
+				isRequired={isRequired}
 			/>
 			{error && <FormErrorMessage>{error}</FormErrorMessage>}
 		</FormControl>

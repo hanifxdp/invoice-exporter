@@ -76,139 +76,166 @@
         "variant" : "Lotus Biscoff [20X10 cm]",
         "price" : [
             33000
-            ]
+            ],
+            "image":""
         },
         {
             "variant" : "Lotus Biscoff [20X40 cm]",
             "price" : [
                 65000
-                ]
+                ],
+                "image":""
             },
         {
         "variant" : "Original [20X10 cm]",
         "price" : [
             28000
-            ]
+            ],
+            "image":""
         },
         {
             "variant" : "Original [20X20 cm]",
             "price" : [
                 55000
-                ]
+                ],
+                "image":""
             },
         {
         "variant" : "Oreo Cookies & Cream [20X10 cm]",
         "price" : [
             30000
-            ]
+            ],
+            "image":""
         },
         {
             "variant" : "Oreo Cookies & Cream [20X20 cm]",
             "price" : [
                 60000
-                ]
+                ],
+                "image":""
             },
         {
         "variant" : "Special Edition [20X10 cm]",
         "price" : [
             65000
-            ]
+            ],
+            "image":""
         },
         {
             "variant" : "Special Edition [20X20 cm]",
             "price" : [
                 130000
-                ]
+                ],
+                "image":""
             },
         {
         "variant" : "Red Velvet Cheese [20X10 cm] [Limited]",
         "price" : [
             42500
-            ]
+            ],
+            "image":""
         },
         {
             "variant" : "Red Velvet Cheese [20X20 cm] [Limited]",
             "price" : [
                 84000
-                ]
+                ],
+                "image":""
             },
         {
         "variant" : "Smore's [20X10 cm]",
         "price" : [
             33000
-            ]
+            ],
+            "image":""
         },
         {
             "variant" : "Smore's [20X20 cm]",
             "price" : [
                 65000
-                ]
+                ],
+                "image":""
             }
     ],
     "Others":[
         {
             "variant": "Poured Tiramisu",
-            "price": 33250
+            "price": 33250,
+            "image":""
         },
         {
             "variant": "Croffle",
-            "price": 55000
+            "price": 55000,
+            "image":""
         },
         {
             "variant": "Extra Bubblewrap",
-            "price": 2000
+            "price": 2000,
+            "image":""
         },
         {
             "variant": "Kartu Ucapan (Custom Handwriting)",
-            "price": 2000
+            "price": 2000,
+            "image":""
         },
         {
             "variant": "Korean Garlic Bread",
-            "price": 25000
+            "price": 25000,
+            "image":""
         }
     ],
     "Cake": [
         {
         "variant": "Blue Cheese Yougurt",
-        "price":  255000
+        "price":  255000,
+        "image":""
         },
         {
         "variant": "Lotus Biscoff",
-        "price":  240000
+        "price":  240000,
+        "image":""
         },
         {
         "variant": "Strawberry Stacked Chocolate",
-        "price":  225000
+        "price":  225000,
+        "image":""
         },
         {
         "variant": "Basque Burnt Cheesecake",
-        "price":  255000
+        "price":  255000,
+        "image":""
         },
         {
         "variant": "Earl Grey Mandarine",
-        "price":  220000
+        "price":  220000,
+        "image":""
         },
         {
         "variant": "Strawberry Chocolate",
-        "price":  255000
+        "price":  255000,
+        "image":""
         }
     ],
     "Slice":[
         {
             "variant": "Creme Brulee",
-            "price": 33000
+            "price": 33000,
+            "image":""
         },
         {
             "variant": "Strawberry",
-            "price": 33000
+            "price": 33000,
+            "image":""
         },
         {
             "variant": "Lotus Biscoff",
-            "price": 33000
+            "price": 33000,
+            "image":""
         },
         {
             "variant": "Belgian Chocolate",
-            "price": 33000
+            "price": 33000,
+            "image":""
         }
     ]
 }

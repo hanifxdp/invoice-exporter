@@ -21,30 +21,16 @@ import {
 } from "react-hook-form";
 import { BiChevronDown, BiPlusCircle, BiTrash } from "react-icons/bi";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useNavigate, useOutletContext } from "react-router-dom";
 import InputForm from "../components/forms/InputForm";
 import SelectInput from "../components/forms/SelectInput";
 import productJSON from "../data/product.json";
 import { validateAddInvoice } from "../components/schema";
-
-export type TypeForm = {
-	customerName: string;
-	email: string;
-	noHp: string;
-	date: string;
-	shipping: string;
-	payment: string;
-	status: string;
-	product?:
-		| {
-				variant: string;
-				price: string;
-				quantity: string;
-				image: string;
-		  }[]
-		| undefined;
-};
+import { invoice, invoiceData } from "../interface/invoice.interface";
 
 export const Home = () => {
+	const { setInvoice } = useOutletContext() as invoice;
+	const navigate = useNavigate();
 	const methods = useForm({
 		resolver: yupResolver(validateAddInvoice),
 	});
@@ -56,14 +42,17 @@ export const Home = () => {
 		formState: { errors },
 	} = methods;
 
-	const onSubmitForm: SubmitHandler<TypeForm> = (data) => {
-		console.log(data);
+	const onSubmitForm: SubmitHandler<invoiceData> = (data) => {
+		console.log(data, "send data");
+		setInvoice(data);
+		navigate("/saved");
 	};
 
 	const { fields, append, remove } = useFieldArray({
 		name: "product",
 		control,
 	});
+	// console.log(useOutletContext());
 
 	return (
 		<FormProvider {...methods}>
@@ -78,17 +67,18 @@ export const Home = () => {
 							placeholder="Customer Name..."
 							required={true}
 							error={errors?.customerName?.message}
+							isRequired={true}
 						/>
 						<InputForm
-							id="noHP"
-							name="noHp"
+							id="phoneNumber"
+							name="phoneNumber"
 							type="number"
 							label="Customer Phone Number"
 							placeholder="Customer Phone Number..."
 							required={true}
-							error={errors?.noHp?.message}
+							error={errors?.phoneNumber?.message}
+							isRequired={true}
 						/>
-
 						<InputForm
 							id="email"
 							name="email"
@@ -97,6 +87,7 @@ export const Home = () => {
 							placeholder="Customer Email..."
 							required={true}
 							error={errors?.email?.message}
+							isRequired={true}
 						/>
 						<InputForm
 							id="date"
@@ -106,6 +97,7 @@ export const Home = () => {
 							placeholder="Pick a date..."
 							required={true}
 							error={errors?.date?.message}
+							isRequired={true}
 						/>
 						<Text as="b">Products</Text>
 						{fields.map((field, idx) => (
@@ -168,14 +160,17 @@ export const Home = () => {
 								</GridItem>
 								<GridItem colSpan={2} as={Flex} gap={2}>
 									<InputForm
-										id={`products.${idx}.quantity`}
+										id={`product.${idx}.quantity`}
 										width="100px"
 										name="quantity"
 										type="number"
 										placeholder="Qty..."
 										required={true}
 										error={errors.product?.[idx]?.quantity?.message}
-										onChange={(e) => setValue(`product.${idx}.quantity`, e.target.value)}
+										onChange={(e) =>
+											setValue(`product.${idx}.quantity`, e.target.value)
+										}
+										isRequired={true}
 									/>
 									<Button
 										variant={"outline"}
@@ -207,6 +202,7 @@ export const Home = () => {
 							]}
 							error={errors.shipping?.message}
 							required={true}
+							isRequired={true}
 						/>
 						<SelectInput
 							id="payment"
@@ -219,6 +215,7 @@ export const Home = () => {
 							]}
 							error={errors.payment?.message}
 							required={true}
+							isRequired={true}
 						/>
 						<SelectInput
 							id="status"
@@ -231,6 +228,7 @@ export const Home = () => {
 							]}
 							error={errors.status?.message}
 							required={true}
+							isRequired={true}
 						/>
 						<Button type="submit">Submit</Button>
 					</Flex>

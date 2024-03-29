@@ -14,4 +14,5 @@ export type TypeProps = {
 	}[];
 	width?: string;
 	onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+	isRequired: boolean;
 };

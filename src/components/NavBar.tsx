@@ -1,24 +1,17 @@
-import {
-	Box,
-	Button,
-	ButtonGroup,
-	Flex,
-	Heading,
-	Spacer,
-	Text,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Spacer } from "@chakra-ui/react";
 import React from "react";
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const NavBar = () => {
 	let navigate = useNavigate();
-	const routeChange = () => {
-		let path = `about`;
-		navigate(path);
-	};
 	return (
-		<>
-			<Flex minW="max-content" alignItems="center" gap="2">
+		<Box width="50%" mx="auto">
+			<Flex
+				minW="max-content"
+				alignItems="center"
+				gap="2"
+				alignContent="center"
+			>
 				<Box p="2">
 					<Heading>Invoice Exporter</Heading>
 				</Box>
@@ -28,14 +21,13 @@ export const NavBar = () => {
 						variant="outline"
 						colorScheme="yellow"
 						onClick={() => {
-							navigate(`about`);
+							navigate(`/about`);
 						}}
 					>
 						<Link to="about">About</Link>
 					</Button>
 				</Box>
 			</Flex>
-			<Outlet />
-		</>
+		</Box>
 	);
 };
