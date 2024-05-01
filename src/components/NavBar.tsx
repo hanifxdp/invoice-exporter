@@ -5,16 +5,14 @@ import { Link, useNavigate } from "react-router-dom";
 export const NavBar = () => {
 	let navigate = useNavigate();
 	return (
-		<Box width="50%" mx="auto">
+		<Box width="75%" mx="auto">
 			<Flex
 				minW="max-content"
 				alignItems="center"
 				gap="2"
 				alignContent="center"
 			>
-				<Box p="2">
-					<Heading>Invoice Exporter</Heading>
-				</Box>
+				<Heading>Invoice Exporter</Heading>
 				<Spacer />
 				<Box p="5">
 					<Button
